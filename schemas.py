@@ -6,7 +6,7 @@ pet = {
             "type": "integer"
         },
         "name": {
-            "type": "integer"
+            "type": "string"
         },
         "type": {
             "type": "string",
@@ -17,4 +17,13 @@ pet = {
             "enum": ["available", "sold", "pending"]
         },
     }
+}
+
+order = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "pet_id": {"type": "integer"}
+    },
+    "required": ["id", "pet_id"]
 }
